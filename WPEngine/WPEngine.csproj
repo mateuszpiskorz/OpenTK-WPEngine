@@ -6,6 +6,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Utils\shader.frag" />
+    <None Remove="Utils\shader.vert" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Utils\shader.frag">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\shader.vert">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="OpenTK" Version="4.6.3" />
   </ItemGroup>
 
